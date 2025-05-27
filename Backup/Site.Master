@@ -1,0 +1,294 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="SintecromNet.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .menu
+        {
+            text-align: justify;
+        }
+        .menu
+        {
+            text-align: right;
+        }
+        .menu
+        {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header" dir="ltr">
+            <div class="title">
+                <h1 style="background-color: #800000">
+                    <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/Logo1.jpg" 
+                        Width="123px" />
+                    SintecromNet
+                </h1>
+            </div>
+            <div class="loginDisplay" style="background-color: #000000; height: 19px;">
+                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
+                    </LoggedInTemplate>
+                </asp:LoginView>
+            </div>
+            <div class="clear" style="background-color: #800000" dir="ltr">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" 
+                    EnableViewState="False" Orientation="Horizontal" BackColor="Black" 
+                    Font-Names="Tahoma" ForeColor="White" ItemWrap="True" RenderingMode="List" 
+                    Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Size="11pt" 
+                    Font-Strikeout="False" Font-Underline="False">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
+                        <asp:MenuItem Text="Mi Intranet" Value="Mi Intranet">
+                            <asp:MenuItem Text="Incidentes Sistemas" Value="Incidentes Sistemas">
+                                <asp:MenuItem NavigateUrl="~/Paginas/Incidentes.aspx" 
+                                    Text="Ingresar Incidentes" Value="Ingresar Incidentes"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/Mis_Incidentes.aspx" Text="Mis Incidentes" 
+                                    Value="Mis Incidentes"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Requerimientos" Value="Requerimientos">
+                                <asp:MenuItem NavigateUrl="~/Paginas/MIS_ReqServicios.aspx" 
+                                    Text="Mis Requerimientos Servicios" Value="Mis Requerimientos Servicios">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Incidentes Mantenimiento" Value="Incidentes Mantenimiento">
+                                <asp:MenuItem NavigateUrl="~/Paginas/MAN_Incidentes.aspx" 
+                                    Text="Ingresar Incidentes" Value="Ingresar Incidentes"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/MAN_Mis_Incidentes.aspx" 
+                                    Text="Mis Incidentes" Value="Mis Incidentes"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Dirección" Value="Dirección">
+                            <asp:MenuItem 
+                                Text="Ventas" Value="Ventas">
+                                <asp:MenuItem NavigateUrl="~/Paginas/DIR_Importe.aspx" Text="Importe" 
+                                    Value="Importe"></asp:MenuItem>
+                                <asp:MenuItem Text="Kilos" Value="Kilos">
+                                    <asp:MenuItem NavigateUrl="~/Paginas/DIR_Latas.aspx" Text="Latas" Value="Latas">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Paginas/DIR_Laminados.aspx" Text="Laminados" 
+                                        Value="Laminados"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/DIR_EvolucionMensual.aspx" 
+                                    Text="Evolución Mensual" Value="Evolución Mensual"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem 
+                                Text="Cobranzas" Value="Cobranzas">
+                                <asp:MenuItem NavigateUrl="~/Paginas/Dir_Cobranzas.aspx" Text="Evolución " 
+                                    Value="Evolución "></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/Dir_ProyectadoCobranzas.aspx" 
+                                    Text="Proyectado" Value="Proyectado"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Financieros" Value="Financieros">
+                                <asp:MenuItem NavigateUrl="~/Paginas/DIR_NC_ND.aspx" 
+                                    Text="Notas Débito/Crédito" Value="Notas Débito/Crédito"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/DIR_Cheques.aspx" Text="Cheques Cartera" 
+                                    Value="Cheques Cartera"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/DIR_DiasCalle.aspx" 
+                                    Text="Dias En La Calle" Value="Dias En La Calle"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Paginas/DIR_Pedidos.aspx" Text="Pedidos" 
+                                Value="Pedidos"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Paginas/SIS_Estadisticas_Trafico.aspx" 
+                                Text="Estadisticas de Tráfico" Value="Estadisticas de Tráfico">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Administración" Value="Administración">
+                            <asp:MenuItem Text="Contabilidad" Value="Contabilidad"></asp:MenuItem>
+                            <asp:MenuItem Text="Compras" Value="Compras">
+                                <asp:MenuItem Text="Indicadores de Gestion" Value="Indicadores de Gestion">
+                                    <asp:MenuItem NavigateUrl="~/Paginas/COM_Indicadores.aspx" 
+                                        Text="Requerimientos" Value="Requerimientos"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Paginas/COM_MateriasPrimasPendientes.aspx" 
+                                        Text="Materias Primas Pendientes" Value="Materias Primas Pendientes">
+                                    </asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/Paginas/COM_Performance_Proveedores.aspx" 
+                                        Text="Performance Proveedores" Value="Performance Proveedores">
+                                    </asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/COM_OC_Servicios.aspx" 
+                                    Text="Ordenes de Compra Servicios" Value="Ordenes de Compra Servicios">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Finanzas" Value="Finanzas">
+                                <asp:MenuItem NavigateUrl="~/Paginas/DIR_Cheques.aspx" Text="Cheques Cartera" 
+                                    Value="Cheques Cartera"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/ADM_VentaEnPesos.aspx" Text="Ventas" 
+                                    Value="Ventas"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Cuentas a Pagar" Value="Cuentas a Pagar">
+                                <asp:MenuItem NavigateUrl="~/Paginas/ADM_OC_Servicios.aspx" 
+                                    Text="Ordenes de Compra Servicios" Value="Ordenes de Compra Servicios">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Cobranzas" Value="Cobranzas">
+                                <asp:MenuItem NavigateUrl="~/Paginas/Pendientes_Por_Cliente.aspx" 
+                                    Text="Pendientes Por Clientes" Value="Pendientes Por Clientes">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/SC_ParteDiario.aspx" Text="Parte Diario" 
+                                    Value="Parte Diario"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="RRHH" Value="RRHH"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Comercial" Value="Comercial">
+                            <asp:MenuItem Text="Administración Ventas" Value="Administración Ventas">
+                                <asp:MenuItem NavigateUrl="~/Paginas/Pendientes_Por_Cliente.aspx" 
+                                    Text="Pendientes Por Cliente" Value="Pendientes Por Cliente"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/VT_EstadoCarteraNoCumplido.aspx" 
+                                    Text="Estado Cartera Pedidos" Value="Estado Cartera Pedidos"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/VT_AnalisisComercial.aspx" 
+                                    Text="Analisis Comercial" Value="Analisis Comercial"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/VT_ParteDiario.aspx" 
+                                    Text="Parte Diario Despacho" Value="Parte Diario Despacho"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/COM_MateriasPrimasPendientes.aspx" 
+                                    Text="Materias Primas Pendientes" Value="Materias Primas Pendientes">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/VT_FacturacionCotizacionDolar.aspx" 
+                                    Text="Facturación Con Cotización" Value="Facturación Con Cotización">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Vendedores" Value="Vendedores">
+                                <asp:MenuItem Text="Casa Central" Value="Casa Central">
+                                    <asp:MenuItem NavigateUrl="~/Paginas/VT_VentasCC.aspx" Text="Ventas" 
+                                        Value="Ventas"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Javier Estefania" Value="Javier Estefania">
+                                    <asp:MenuItem NavigateUrl="~/Paginas/VT_VentasES.aspx" Text="Ventas" 
+                                        Value="Ventas"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Ricardo Perrone" Value="Ricardo Perrone">
+                                    <asp:MenuItem NavigateUrl="~/Paginas/VT_VentasRP.aspx" Text="Ventas" 
+                                        Value="Ventas"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Lucio Cantagallo" Value="Lucio Cantagallo">
+                                    <asp:MenuItem NavigateUrl="~/Paginas/VT_VentasLC.aspx" Text="Ventas" 
+                                        Value="Ventas"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/VT_VentasAM.aspx" Text="Antonio Milone" 
+                                    Value="Antonio Milone">
+                                    <asp:MenuItem Text="Ventas" Value="Ventas"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Jordan Muschitiello" Value="Jordan Muschitiello">
+                                    <asp:MenuItem NavigateUrl="~/Paginas/VT_VentasJM.aspx" Text="Ventas" 
+                                        Value="Ventas"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="Fernando Facheli" Value="Fernando Facheli">
+                                    <asp:MenuItem NavigateUrl="~/Paginas/VT_VentasFF.aspx" Text="Ventas" 
+                                        Value="Ventas"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Planificación Comercial" Value="Planificación Comercial">
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Paginas/VT_CarteraPorVendedor.aspx" 
+                                Text="Prototipo" Value="Prototipo"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Plantas" Value="Plantas">
+                            <asp:MenuItem Text="Supply Chain" Value="Supply Chain">
+                                <asp:MenuItem NavigateUrl="~/Paginas/SC_ParteDiario.aspx" Text="Parte Diario" 
+                                    Value="Parte Diario"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/Planes.aspx" Text="Planes" Value="Planes">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/SC_PendientesPesada.aspx" 
+                                    Text="Pendientes de Pesada" Value="Pendientes de Pesada"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/SC_PendientesComercial.aspx" 
+                                    Text="Pendientes Comercial" Value="Pendientes Comercial"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/SC_PendientesCredito.aspx" 
+                                    Text="Pendientes Crédito" Value="Pendientes Crédito"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/SC_PendientesCobranzas.aspx" 
+                                    Text="Pendientes Cobranzas" Value="Pendientes Cobranzas"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/SC_PendientesDespacho.aspx" 
+                                    Text="Pendientes Despacho" Value="Pendientes Despacho"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Producción" Value="Producción">
+                                <asp:MenuItem NavigateUrl="~/Paginas/PROD_NovedadesTurnos.aspx" 
+                                    Text="Ingreso Novedades Turnos" Value="Ingreso Novedades Turnos">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/PROD_VistoNovedadesTurnos.aspx" 
+                                    Text="Visto Novedades Turnos" Value="Visto Novedades Turnos"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/PROD_ConsultaNovedadesTurnos.aspx" 
+                                    Text="Consulta Novedades Turnos" Value="Consulta Novedades Turnos">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Calidad" Value="Calidad">
+                                <asp:MenuItem NavigateUrl="~/Paginas/CAL_ComposicionesQuimicas.aspx" 
+                                    Text="Composiciones Quimicas" Value="Composiciones Quimicas"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/CAL_EspecificacionMateriales.aspx" 
+                                    Text="Especificaciones Materiales" Value="Especificaciones Materiales">
+                                </asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Planta 2" Value="Planta 2"></asp:MenuItem>
+                            <asp:MenuItem Text="Planta 3" Value="Planta 3"></asp:MenuItem>
+                            <asp:MenuItem Text="Mantenimiento" Value="Mantenimiento">
+                                <asp:MenuItem NavigateUrl="~/Paginas/MAN_Administracion_Incidentes.aspx" 
+                                    Text="Administración De Incidentes" Value="Administración De Incidentes">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/MAN_Informes_Incidentes.aspx" 
+                                    Text="Informes Incidentes" Value="Informes Incidentes"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/MAN_Monitor_Incidentes.aspx" 
+                                    Text="Monitor Incidentes" Value="Monitor Incidentes"></asp:MenuItem>
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Sistemas" Value="Sistemas">
+                            <asp:MenuItem Text="Parámetros" Value="Parámetros">
+                                <asp:MenuItem NavigateUrl="~/Paginas/DiasHabiles.aspx" Text="Días Hábiles" 
+                                    Value="Días Hábiles"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Paginas/SIS_Administracion_Incidentes.aspx" 
+                                Text="Administración Incidentes" Value="Administración Incidentes">
+                                <asp:MenuItem NavigateUrl="~/Paginas/Informes_Incidentes.aspx" Text="Informes" 
+                                    Value="Informes"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Paginas/Monitor_Incidentes.aspx" 
+                                Text="Monitor de Incidentes" Value="Monitor de Incidentes"></asp:MenuItem>
+                            <asp:MenuItem 
+                                Text="Indicadores de Gestión" Value="Indicadores de Gestión">
+                                <asp:MenuItem NavigateUrl="~/Paginas/SIS_Indicadores.aspx" Text="Incidentes" 
+                                    Value="Incidentes"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/SIS_Disponibilidad.aspx" 
+                                    Text="Disponibilidad" Value="Disponibilidad"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Paginas/SIS_Estadisticas_Trafico.aspx" 
+                                Text="Estadisticas de Tráfico" Value="Estadisticas de Tráfico">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Documentación" Value="Documentación">
+                            <asp:MenuItem Text="Sistemas" Value="Sistemas">
+                                <asp:MenuItem NavigateUrl="~/Paginas/DOC_SeguridadDeLaInformacion.aspx" 
+                                    Text="Seguridad de La Información" Value="Seguridad de La Información">
+                                </asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/Infraestructura.aspx" 
+                                    Text="Infraestructura" Value="Infraestructura"></asp:MenuItem>
+                                <asp:MenuItem NavigateUrl="~/Paginas/DOC_Funcional.aspx" 
+                                    Text="Documentación Funcional" Value="Calipso"></asp:MenuItem>
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Calidad" Value="Calidad" 
+                                NavigateUrl="~/Paginas/GestionCalidad.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="Acerca De"/>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>
