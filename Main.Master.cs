@@ -1,23 +1,24 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
 using System.DirectoryServices;
 using System.DirectoryServices.ActiveDirectory;
+using System.IO;
+using System.Linq;
+using System.Management;
+using System.Net;
+using System.Reflection;
 using System.Security.Principal;
-using System.Web.SessionState;
+using System.Web;
 using System.Web.Security;
+using System.Web.SessionState;
+using System.Web.UI;
+using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
 using System.Xml;
-using System.Net;
-using System.IO;
-using System.Data.SqlClient;
-using System.Collections;
-using System.Data;
-using System.Management;
 
 namespace SintecromNet
 {
@@ -25,8 +26,12 @@ namespace SintecromNet
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
-            Label3.Text = version;
+            //string version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version.ToString();
+            //Label3.Text = version;
+            string fileVersion = System.Reflection.Assembly.GetExecutingAssembly()
+                           .GetCustomAttribute<System.Reflection.AssemblyFileVersionAttribute>()?
+                           .Version;
+            Label3.Text = fileVersion; // O Label3.Text = !string.IsNullOrEmpty(fileVersion) ? fileVersion : "N/A"; para manejar nulos
             WindowsIdentity user = WindowsIdentity.GetCurrent();
              string usuario = user.Name;
             usuario = Clases.Varias.RemoveSpecialCharacters(usuario.ToString());

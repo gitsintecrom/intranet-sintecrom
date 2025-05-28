@@ -109,3 +109,15 @@ C:\0-Repositorio\Sintecrom\Intranet\obj\Debug\SintecromNet.csproj.CopyComplete
 C:\0-Repositorio\Sintecrom\Intranet\obj\Debug\SintecromNet.dll
 C:\0-Repositorio\Sintecrom\Intranet\obj\Debug\SintecromNet.pdb
 C:\0-Repositorio\Sintecrom\Intranet\obj\Debug\SintecromNet.csproj.AssemblyReference.cache
+C:\Sintecrom\Intranet\Intranet\bin\SintecromNet.dll.config
+C:\Sintecrom\Intranet\Intranet\bin\SintecromNet.dll
+C:\Sintecrom\Intranet\Intranet\bin\SintecromNet.pdb
+C:\Sintecrom\Intranet\Intranet\bin\Microsoft.Web.Infrastructure.dll
+C:\Sintecrom\Intranet\Intranet\bin\Newtonsoft.Json.dll
+C:\Sintecrom\Intranet\Intranet\bin\DocumentFormat.OpenXml.xml
+C:\Sintecrom\Intranet\Intranet\obj\Debug\SintecromNet.csproj.AssemblyReference.cache
+C:\Sintecrom\Intranet\Intranet\obj\Debug\SintecromNet.csproj.ResolveComReference.cache
+C:\Sintecrom\Intranet\Intranet\obj\Debug\SintecromNet.csproj.CoreCompileInputs.cache
+C:\Sintecrom\Intranet\Intranet\obj\Debug\Sintecro.E98B57E4.Up2Date
+C:\Sintecrom\Intranet\Intranet\obj\Debug\SintecromNet.dll
+C:\Sintecrom\Intranet\Intranet\obj\Debug\SintecromNet.pdb

@@ -107,8 +107,8 @@
             </asp:BoundField>
             <asp:BoundField DataField="Calidad" HeaderText="Calidad" >
             </asp:BoundField>
-            <asp:BoundField DataField="Lista" HeaderText="Lista" DataFormatString="{0:n3}" />           
-            <asp:BoundField DataField="Bonificacion" HeaderText="Bonificacion" DataFormatString="{0:n3}" />           
+            <asp:BoundField DataField="Lista" HeaderText="Precio Técnico" DataFormatString="{0:n3}" />           
+            <asp:BoundField DataField="Bonificacion" HeaderText="Variación (en %)" DataFormatString="{0:n3}" />           
             <asp:BoundField DataField="PrecioNeto" HeaderText="Precio Neto" DataFormatString="{0:n3}" />           
             
            
