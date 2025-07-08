@@ -1,0 +1,1190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\pmorrone.DOMINIO\Desktop\Publicaciones</_PublishTargetUrl>
+    <History>True|2025-07-08T12:58:09.9206718Z||;False|2025-07-08T09:57:06.2784475-03:00||;False|2025-07-08T09:43:53.9474564-03:00||;False|2025-07-08T09:37:21.3156962-03:00||;False|2025-07-08T09:31:14.8415639-03:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Account/ChangePassword.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Account/ChangePasswordSuccess.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Account/Login.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Account/Register.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Account/Web.config">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/DocumentFormat.OpenXml.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="bin/EnvDTE.dll">
+      <publishTime>04/15/2025 12:41:46</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/itextsharp.dll">
+      <publishTime>07/08/2025 08:43:00</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.DataVisualization.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Design.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.ProcessingObjectModel.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebDesign.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WinForms.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/08/2023 07:09:56</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>07/08/2025 08:43:01</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/SintecromNet.dll">
+      <publishTime>07/08/2025 09:40:34</publishTime>
+    </File>
+    <File Include="bin/SintecromNet.pdb">
+      <publishTime>07/08/2025 09:40:34</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x64/msvcr120.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x64/SqlServerSpatial140.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x86/msvcr120.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="bin/SqlServerTypes/x86/SqlServerSpatial140.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="bin/stdole.dll">
+      <publishTime>05/06/2021 15:41:24</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="bin/System.Web.Cors.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.Cors.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.Common.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.DataVisualization.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.Design.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.WebDesign.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.WebForms.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/Microsoft.ReportViewer.WinForms.resources.dll">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="ContentPage.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="HImagen.ashx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="HImagen2.ashx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="HImagen3.ashx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="HImagen4.ashx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/21105644.png">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/22.png">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/6470727-tel-fono-de-contacto-de-icono-bot-n-3d-c-rculo-de-color-rojo-brillante.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/a9be3f6f-f0a7-4ccc-a632-6eee8cdd4ec7-large.jpeg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/add.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Advertencia.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/analisis-economico.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/aumentar_ventas.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/back_disabled.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/back_enabled.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/banderin.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/BATEV.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/boton.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/buscar.png">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Calidad.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Calidad1.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Cheques.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/cumple.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/cumplea.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/cumpleaños.jpeg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Desarrollo.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/editar.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/eliminar.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/envase-hojalata-2.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/exc.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/fiestas.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/fondo-contacto.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/forward_disabled.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/forward_enabled.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/icono-pdf.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/icono_search.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/icon_attachments.png">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/imagen 2.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Imagen1.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/imprimir.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/imágen para fondo.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Indicadores.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/inun.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Iso.png">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Laminados.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/loader.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Logo.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Logo001.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Logo1.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/mantenimiento.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/ndnc.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/new.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/pascuas.png">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Pedidos.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/piefoto.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/protocolo.pdf">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/salir.png">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/search.png">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/seguridad.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/SinFoto.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/sintecrom web black.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/sort_asc.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/sort_both.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/sort_desc.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/stars/back_disabled.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/stars/back_enabled.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/stars/forward_disabled.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/stars/forward_enabled.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/stars/sort_asc.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/stars/sort_both.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/stars/sort_desc.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/tablero.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/tables/back_disabled.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/tables/back_enabled.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/tables/forward_disabled.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/tables/forward_enabled.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/tables/sort_asc.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/tables/sort_both.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/tables/sort_desc.gif">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/tel1.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/TeleTrabajo.pdf">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/torta.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/Trafico.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/traficoInternet.jpg">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/vacu.png">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Images/VPN.pdf">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Learning.html">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Main.Master">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/0_COT.html">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_ChequesEnCartera.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_ComunicacionAmbiental.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_Contactos.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_CostosReposicion.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_CredyCondPago.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_DetalleFacturacion.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_GestionInternos.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_InformeClientes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_InventarioMensualCostos.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_OC_Servicios.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_PendienteFacturaVenta.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_Pendientes_Por_Cliente.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_PosicionIVA.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_ReclamosPendientesNC.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_ReclamosPendientesRespuesta.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ADM_SaldosPorCliente.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/CAL_AutorizacionMuestras.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/CAL_ComposicionesQuimicas.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/CAL_ComunicacionAmbiental.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/CAL_EspecificacionMateriales.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/CAL_EstadoReclamos.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/CAL_FichasTecnicas.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/CAL_GestionMuestras.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/CAL_GestionReclamos.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/CAL_Imagenes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/CAL_InformeMuestras.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/CAL_PruebasTraccion.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/CAL_SIDPantallaInicial.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/CAL_TamboresPintura.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/COM_AutorizacionRequerimientos.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/COM_CompraInsumosAnual.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/COM_CompraServiciosAnual.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/COM_GestionIPC.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/COM_GestionMateriasPrimasPendientes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/COM_IndicadoresDeGestion.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/COM_InsumosPendientes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/COM_ItemsPendientesImportacion.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/COM_MateriasPrimasPendientes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/COM_OC_Servicios.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/COM_ParametrosProveedores.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/COM_PerformanceProveedores.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/COM_ProductosPañol.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_Cobranzas.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_ControlSaldosProveedores.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_DetalleCobranzas.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_DetalleFacturacion.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_DetalleFacturacionAnual.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_DetalleFacturacionPorMes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_DetalleNC.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_DetalleND.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_DetallePedidos.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_Equipamiento.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_ProductosDefectuosos.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_RankingClientes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_ReclamosPendientes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_ReclamosPendientesNC.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DIR_TableroDireccion.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DOC_AperturaEjercicio.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DOC_Funcional.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DOC_SeguridadDeLaInformacion.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/DOC_TrackingDePedido.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/Imagenes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/Informes_Incidentes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ING_GeneracionArchivos.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ING_OCPendientesValorizadas.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ING_PedidosPendientesProgramar.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ING_ProducidoPorFecha.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/ING_Stock.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_AutorizacionInventario.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_ConfiguracionInicial.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_EditarInventarioAnual.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_EgresoInventario.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_IngresoInventario.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_IngresoInventarioAnual.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_IngresosPendientesMP.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_InventarioAnual.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_InventarioPorDeposito.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_InventarioTambores.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_ProgresoInventario.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_Reclasificaciones.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_ReclasificacionScrap.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_RelevamientoInventarioAnual.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_ResultadoInventarioAnual.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_TrackingSerieLote.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_TransaccionesInventario.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/INV_TransferenciaInventario.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/MAIL_GeneracionMailMasivo.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/MAIL_InformeMailMasivo.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/MAN_Administracion_Incidentes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/MAN_Imagenes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/MAN_Incidentes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/MAN_Informes_Incidentes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/MAN_Mis_Incidentes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/MAN_Monitor_Incidentes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/MIS_ComunicacionAmbiental.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/MIS_EstadoIncidentes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/MIS_Incidentes.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/MIS_Internos.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/MIS_ReqServicios.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/PRODUCTO_CatalogoTernium.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/PRODUCTO_TraerCatalogoTernium.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/PROD_AjusteInventarioSRP.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/PROD_EgresosPañol.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/PROD_GestionPañol.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/PROD_IngresoPlanta2.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/PROD_NovedadesManualesPañol.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/PROD_NovedadesPañol.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/PROD_ProducidoPorFamilia.aspx">
+      <publishTime>07/08/2025 08:42:58</publishTime>
+    </File>
+    <File Include="Paginas/PROD_ProducidoSlitterEmbalaje.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/PROD_ProductosPañol.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/PROD_RegistroInspeccion.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/PROD_RequerimientosProduccion.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/PROD_SeguimientoPañol.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/PROD_SeguimientoPedidosFabricados.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/PROD_SeguimientoViajes.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/PROG_ReservaMP.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/Restringida.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/RRHH_Cumple.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/RRHH_Empleados.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/RRHH_GestionNoticias.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/RRHH_Imagenes.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/RRHH_Legajos.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/RRHH_Noticias.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/RRHH_NovedadesLiquidacion.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SC_ConsultaMatching.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SC_COT.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SC_EstadoMatching.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SC_OperacionesHuerfanas.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SC_ParcialesHornoSRP.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SC_ParteDiario.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SC_PendientesDePesada.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SC_TrackingPedido.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SIS_AdmEquipos.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SIS_AdmIncidentes.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SIS_Consultores.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SIS_DetalleNavegacion.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SIS_Disponibilidad.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SIS_Estadisticas_Trafico.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SIS_Estadisticas_TraficoPlanta2.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SIS_Estadisticas_TraficoSemanal.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SIS_GestionProyectos.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SIS_SeguimientoProyectos.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SIS_TableroSRP.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SIS_Trafico_Intranet.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SRP_AnulacionOperaciones.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SRP_SeguimientoScrap.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SRP_TrackingCalidad.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/SRP_TrackingProduccion.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_AutorizacionMatching.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_AutorizacionPedidos.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_AutorizacionPedidosAdmin.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_ClientesXV.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_ConfiguracionListaDePrecios.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_ConfiguracionLME.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_ConsultaContactos.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_CredyCondPago.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_CredyCondPagoPorVendedor.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_CuentaCorrienteGlobal.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_CuentaCorrientePorVendedor.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_DetalleAutorizacionMatching.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_EstadoCarteraPedidos.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_EstadoCarteraPedidosXV.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_FacturacionCotizacionDolar.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_FichasTecnicas.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_GestionOportunidades.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_GestionReclamos.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_GestionStockDisponibleVentas.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_IngresoContactos.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_IngresoPedidos.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_IngresoReclamos.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_InventarioOportunidades.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_ListaDePreciosLMEXV.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_ListaDePreciosXV.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_MaterialaRemitir.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_MaterialaRemitirXV.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_MateriasPrimasPendientes.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_ModificacionPedidos.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_ParteDiario.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_PendienteCarteraPorVendedor.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_ReservaMP.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_ReservasGestion.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_StockDisponibleVentas.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_Ventas.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_VentasPorFamilia.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_VentasPorVendedor.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Paginas/VT_VentasPorVendedorDia.aspx">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap-submenu.js">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.4.2.min.js">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery-2.1.1.js">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery.dataTables.min.js">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Scripts/jquery.metadata.js">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Scripts/script.js">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Service References/ProductosWS/SintecromNet.ProductosWS.Catalog.datasource">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Service References/ProductosWS/SintecromNet.ProductosWS.GetCatalogResponse.datasource">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Sorteo.html">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="SqlServerTypes/readme.htm">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x64/msvcr120.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x64/SqlServerSpatial140.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x86/msvcr120.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="SqlServerTypes/x86/SqlServerSpatial140.dll">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Styles/jquery.jdigiclock.css">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Styles/Site.css">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Styles/style.css">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="Teletrabajo.html">
+      <publishTime>07/08/2025 08:42:59</publishTime>
+    </File>
+    <File Include="venobox.css">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="venobox.js">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="venobox.min.css">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="venobox.min.js">
+      <publishTime>07/08/2025 08:43:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/08/2025 09:31:14</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
