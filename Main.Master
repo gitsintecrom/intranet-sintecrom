@@ -373,8 +373,8 @@
                                 <li><a href="/Paginas/VT_GestionStockDisponibleVentas.aspx" style="color: #CC3300;">Gestion Stock Promociones</a></li> 
                                 <li><a href="/Paginas/PROD_SeguimientoPedidosFabricados.aspx" style="color: #CC3300;">Seguimiento Entrega Pedidos</a></li> 
                                 <li><a href="/Paginas/INV_IngresosPendientesMP.aspx" style="color: #CC3300;">Ingresos Pendientes MP</a></li>
-                                <li><a href="/Paginas/SRP_TrackingCalidad.aspx" style="color: #CC3300;">Tracking Calidad</a></li> 
-                                
+                                <li><a href="/Paginas/SRP_TrackingCalidad.aspx" style="color: #CC3300;">Tracking Calidad</a></li>
+                                <li><a href="/Paginas/DIR_TableroDireccion.aspx" style="color: #CC3300;">Vista Facturacion</a></li>                                
                             </ul>
                             </li>
 
