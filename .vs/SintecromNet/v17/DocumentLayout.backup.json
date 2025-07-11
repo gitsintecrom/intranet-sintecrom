@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "Main.Master.cs",
               "ToolTip": "C:\\Sintecrom\\Intranet\\Intranet\\Main.Master.cs",
               "RelativeToolTip": "Main.Master.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAmwCEAAACGAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAmwCEAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T16:40:45.38Z",
               "EditorCaption": ""
@@ -51,7 +51,8 @@
               "RelativeToolTip": "Main.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-05-27T16:39:30.216Z"
+              "WhenOpened": "2025-05-27T16:39:30.216Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -61,7 +62,7 @@
               "RelativeDocumentMoniker": "Properties\\AssemblyInfo.cs",
               "ToolTip": "C:\\Sintecrom\\Intranet\\Intranet\\Properties\\AssemblyInfo.cs",
               "RelativeToolTip": "Properties\\AssemblyInfo.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAuwCIAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-27T16:20:29.284Z",
               "EditorCaption": ""

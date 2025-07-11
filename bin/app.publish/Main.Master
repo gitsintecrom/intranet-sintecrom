@@ -1,0 +1,1270 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.master.cs" Inherits="SintecromNet.Main" %>
+<%@ Import Namespace="System.Web.Optimization" %>
+<!DOCTYPE html>
+<html lang="en">
+<head id="Head1" runat="server">
+    <title>Sintecrom - Intranet</title>    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Intranet de Sintecrom S.A.I.C">
+    <meta name="author" content="Jorge Navarro">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">    
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link href="/your-path-to-fontawesome/css/fontawesome.css" rel="stylesheet">
+   
+    
+    <script>
+        $(document).ready(function () {
+            $('.dropdown-submenu a.test').on("click", function (e) {
+                $(this).next('ul').toggle();
+                e.stopPropagation();
+                e.preventDefault();
+            });
+        });
+        $('#myModal').on('shown.bs.modal', function () {
+            $('#myInput').trigger('focus')
+        })
+    </script>
+<style>
+    .dropdown-submenu {
+    position: relative;
+    /*position: static;*/
+}
+    /*$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})*/
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+    background-color: white;
+
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+</style>
+
+
+    <asp:ContentPlaceHolder ID="StyleSection" runat="server" />
+
+</head>
+   
+
+    
+<body style="background-color: #CCCCCC">
+
+    <div class="container">
+        <!-- Static navbar -->
+        
+        <div class="navbar navbar-default" role="navigation" aria-multiselectable="False" aria-orientation="horizontal" dir="ltr">                    
+                    
+            <div class="container" aria-orientation="horizontal" style="background-color: #960101; border-radius: 5px">
+                <div class="navbar-header">
+                   
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                      
+                
+                </div>                                
+                <div class="navbar-collapse collapse" >
+                   
+                      
+                     
+                    <ul class="nav navbar-nav"> 
+                                                 
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="color: #FFFFFF">Mi Intranet
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                            <li role="presentation" class="dropdown-header" style="background-color: #000000; color: #FFFFFF; font-weight: bold;">Incidentes Sistemas</li>
+                            <li><a href="/Paginas/MIS_Incidentes.aspx">Ingresar Incidentes Sistemas</a></li>
+                            <li><a href="/Paginas/MIS_EstadoIncidentes.aspx">Estado Incidentes Sistemas</a></li>
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation" class="dropdown-header" style="background-color: #000000; color: #FFFFFF; font-weight: bold;">Incidentes Matenimiento</li>
+                            <li><a href="/Paginas/MAN_Incidentes.aspx">Ingresar Incidentes Mantenimiento</a></li>
+                            <li><a href="/Paginas/MAN_Mis_Incidentes.aspx">Estado Incidentes Mantenimiento</a></li>                            
+                            <li role="presentation" class="divider"></li>
+                            <li role="presentation" class="dropdown-header" style="background-color: #000000; color: #FFFFFF; font-weight: bold;">Requerimientos</li>
+                            <li><a href="/Paginas/MIS_ReqServicios.aspx">Mis Requerimientos de Servicios</a></li>
+                            <li role="presentation" class="divider"></li>                         
+                            <li role="presentation" class="dropdown-header" style="background-color: #000000; color: #FFFFFF; font-weight: bold;">Comunicaciones</li>
+                            <li><a href="/Paginas/MIS_ComunicacionAmbiental.aspx">Mis Comunicaciones</a></li>
+                          </ul> 
+                                                       
+                        </li>
+                         <li>&nbsp;</li>
+                        <li class="active"><a class="fa fa-phone-square  fa-2x"  style="color:white; background-color: #960101;"  href="../Paginas/MIS_Internos.aspx"></a></li> 
+                        <%--<li class="active"><a class="fa fa-phone-square  fa-2x"    href="../Paginas/MIS_Internos.aspx"></a>960101 #CC3300</li>--%> 
+                             
+                        <li class="active"><a class="fas fa-clinic-medical fa-2x"  style="color:white; background-color: #960101;" data-toggle="tooltip" data-placement="right" title="COVID19 Protocolo Salud e Higiene"  href="../Images/Protocolo.pdf"></a></li> 
+                        <li class="active"><a class="fas fa-graduation-cap fa-2x"  style="color:white; background-color: #960101;" data-toggle="tooltip" data-placement="right" title="Sintecrom Learning"  href="https://sintecromsa.sharepoint.com/sites/Capacitaciones"></a></li> 
+                        <li class="active"><a class="fab fa-apple fa-2x"  style="color:white; background-color: #960101;" data-toggle="collapse" data-placement="right" title="Sistemas"  href="#collapseExample"></a></li> 
+                         
+                        <%--<li class="active"><a class="fas fa-trophy fa-2x"  style="color:white; background-color: #960101;" href="../Sorteo.html"  target="_blank" onclick="window.open(this.href, this.target, 'width=800,height=600'); return false;" ></a></li>--%>
+                        <%--Quitar comentario en el inventario Anual JRN 06-07-2022--%>
+                        <%--<li class="active"><a class="fas fa-dolly-flatbed fa-2x"  style="color:white; background-color: #960101;" title="Inventario Anual" href="../Paginas/INV_IngresoInventarioAnual.aspx"></a></li>--%> 
+                        <%--<li class="active"><a class="fas fa-briefcase fa-2x"  style="color:white; background-color: #960101;" data-toggle="collapse" data-placement="right" title="Vendedores"  href="#collapseVentas"></a></li>--%> 
+                    </ul>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body">
+                          <div class="btn-group" role="group" aria-label="Basic example" >
+                              <a href="/Paginas/SIS_AdmEquipos.aspx" class="btn btn-light" style="color:#960101; background-color: white;">Equipamiento</a>
+                              <%--<a href="../Sorteo.html" class="btn btn-light" target="_blank" onclick="window.open(this.href, this.target, 'width=800,height=600'); return false;" >Equipamiento</a>--%>
+ 
+                              <a href="/Paginas/SIS_AdmIncidentes.aspx"class="btn btn-light" style="color:#960101; background-color: white;">Incidentes</a>
+                              <a href="/Paginas/SIS_TableroSRP.aspx"class="btn btn-light" style="color:#960101; background-color: white;">Tablero</a>
+                              <a href="/Paginas/SRP_TrackingProduccion.aspx"class="btn btn-light" style="color:#960101; background-color: white;">Tracking</a>
+                              <a href="/Paginas/SIS_GestionProyectos.aspx"class="btn btn-light" style="color:#960101; background-color: white;">Proyectos</a>
+                              
+                              <%--<a href="/Paginas/INV_EditarInventarioAnual.aspx"class="btn btn-light" style="color:#960101; background-color: white;">Inventario Anual</a>--%>
+          
+                        </div>
+                      </div>
+                    </div>
+
+       
+                        
+                    <br />   
+                              
+                    <ul class="nav navbar-nav navbar-right"> 
+                       
+
+                        <asp:Label ID="Label1" runat="server" forecolor="White" Text="" CssClass="h4"></asp:Label> 
+                        <asp:Label ID="Label2" runat="server" forecolor="White" Text="" CssClass="h4"></asp:Label>                         
+                                               
+                    
+                    </ul>
+                    
+                </div>   
+                <%--INICIO--%>
+                
+
+                  <div class="navbar-collapse collapse" style="background-color: #CC3300; color: #FFFFFF">
+                                      
+                    <ul class="nav navbar-nav"> 
+                        <li class="active"><a class="fa fa-home fa-2x" style="color: #FFFFFF; background-color: #CC3300;" href="..//ContentPage.aspx"></a></li> 
+                  
+                        <%--Administracion--%>
+                        
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: #FFFFFF"><i class='fas fa-business-time'></i> Administración
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+
+                            <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Cobranzas</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/DIR_Cobranzas.aspx" style="color: #CC3300;">Detalle Cobranzas</a></li>
+                                <li><a href="/Paginas/VT_CuentaCorrienteGlobal.aspx" style="color: #CC3300;">Estado Cuenta Corriente</a></li>
+                                <li><a href="/Paginas/ADM_CredyCondPago.aspx" style="color: #CC3300;">Crédito y Condiciones de Pago</a></li>
+                                <li><a href="/Paginas/SC_ParteDiario.aspx" style="color: #CC3300;">Parte Diario</a></li>
+                                <li><a href="/Paginas/ADM_Pendientes_Por_Cliente.aspx" style="color: #CC3300;">Pendientes Por Cliente</a></li>                           
+                            </ul>
+                            </li>  
+                                <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF; ">Contabilidad</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/ADM_PosicionIVA.aspx" style="color: #CC3300;">Posición IVA</a></li> 
+                                <li><a href="/Paginas/DIR_ControlSaldosProveedores.aspx" style="color: #CC3300;">Saldos Proveedores</a></li> 
+                            </ul>
+                            </li>  
+                              <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Costos</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/ADM_CostosReposicion.aspx" style="color: #CC3300;">Costos Reposicion</a></li>                                                           
+                                <li><a href="/Paginas/ADM_InventarioMensualCostos.aspx" style="color: #CC3300;">Inventario Mensual</a></li>                                                           
+                            </ul>
+                            </li>  
+
+                            <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Cuentas a Pagar</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/ADM_OC_Servicios.aspx" style="color: #CC3300;">Orden de Compra Servicio</a></li>
+                            </ul>
+                            </li>  
+                            
+                            <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Facturacion</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/ADM_InformeClientes.aspx" style="color: #CC3300;">Clientes</a></li>
+                                <li><a href="/Paginas/ADM_DetalleFacturacion.aspx" style="color: #CC3300;">Detalle Facturación</a></li>
+                                <li><a href="/Paginas/VT_EstadoCarteraPedidos.aspx" style="color: #CC3300;">Estado Cartera de Pedidos</a></li>
+                                <li><a href="/Paginas/ADM_PendienteFacturaVenta.aspx" style="color: #CC3300;">Pendiente Facturación</a></li>                            
+                                <li><a href="/Paginas/ADM_SaldosPorCliente.aspx" style="color: #CC3300;">Saldos Por Cliente</a></li>
+                            </ul>
+                            </li>  
+                                                            
+                            <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF; ">Finanzas</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/ADM_ChequesEnCartera.aspx" style="color: #CC3300;">Cheques en Cartera</a></li>                          
+                            </ul>
+                            </li>  
+
+                               <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Gerencial</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/INV_AutorizacionInventario.aspx" style="color: #CC3300;">Autorización de Inventario</a></li>
+                                <li><a href="/Paginas/COM_AutorizacionRequerimientos.aspx?parametro=9" style="color: #CC3300;">Autorización Requerimientos</a></li>                                                           
+                                <li><a href="/Paginas/VT_AutorizacionPedidosAdmin.aspx" style="color: #CC3300;">Autorización Pedidos Admin</a></li>
+                                <li><a href="/Paginas/CAL_AutorizacionMuestras.aspx" style="color: #CC3300;">Autorización Muestras</a></li>
+                                
+                            </ul>
+                            </li>  
+
+                              <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Mail Masivos</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Paginas/MAIL_GeneracionMailMasivo.aspx?parametro=Admin" style="color: #CC3300;">Generación Mail Masivos</a></li>                                
+                                <li><a href="/Paginas/MAIL_InformeMailMasivo.aspx" style="color: #CC3300;">Informe Mail Masivos</a></li>                                
+                            </ul>
+                            </li>
+
+                            <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF; ">Proveedores</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/DIR_ControlSaldosProveedores.aspx" style="color: #CC3300;">Saldo Proveedores</a></li>
+                          
+                            </ul>
+                            </li> 
+
+                            <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Recepción</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/ADM_Contactos.aspx" style="color: #CC3300;">Administración de Contactos</a></li>                           
+                                <li><a href="/Paginas/ADM_GestionInternos.aspx" style="color: #CC3300;">Gestión de Internos</a></li>                           
+                                <li><a href="/Paginas/ADM_ComunicacionAmbiental.aspx" style="color: #CC3300;">Registro Comunicaciones</a></li>                           
+                            </ul>
+                            </li> 
+
+                            <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Reclamos</a>
+                            <ul class="dropdown-menu">			                     
+                                <li><a href="/Paginas/ADM_ReclamosPendientesNC.aspx" style="color: #CC3300;">Nota de Crédito Reclamos</a></li>
+                                <li><a href="/Paginas/ADM_ReclamosPendientesRespuesta.aspx" style="color: #CC3300;">Respuesta Reclamos</a></li>
+                            </ul>
+                            </li>
+
+                            
+                          
+                          </ul>
+                        </li>
+                        
+                        <%--Calidad--%>    
+                                
+                          <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: #FFFFFF"><i class='fas fa-award'></i> Calidad
+                            <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                  <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Gerencial</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/COM_AutorizacionRequerimientos.aspx?parametro=8" style="color: #CC3300;">Autorización Requerimientos</a></li>
+                                <li><a href="/Paginas/CAL_AutorizacionMuestras.aspx?parametro=0" style="color: #CC3300;">Autorización Muestras</a></li>
+                                <li><a href="/Paginas/CAL_AutorizacionMuestras.aspx?parametro=4" style="color: #CC3300;">Autorización Despacho Muestras</a></li>
+
+                                
+                            </ul>
+                            </li>  
+                            <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Gestión</a>
+			                <ul class="dropdown-menu">
+			                    <li><a href="/Paginas/CAL_ComposicionesQuimicas.aspx" style="color: #CC3300;">Composiciones Químicas</a></li>
+                                <li><a href="/Paginas/CAL_ComunicacionAmbiental.aspx" style="color: #CC3300;">Comunicaciones Ambientales</a></li>
+                                <li><a href="/Paginas/CAL_EspecificacionMateriales.aspx" style="color: #CC3300;">Especificaciones Materiales</a></li>
+                                <li><a href="/Paginas/CAL_FichasTecnicas.aspx" style="color: #CC3300;">Fichas Tecnicas</a></li>
+                                <li><a href="/Paginas/CAL_PruebasTraccion.aspx" style="color: #CC3300;">Pruebas de Tracción</a></li>
+                                <li><a href="/Paginas/SRP_TrackingCalidad.aspx" style="color: #CC3300;">Tracking Calidad</a></li> 
+                                <li><a href="/Paginas/SRP_TrackingProduccion.aspx" style="color: #CC3300;">Tracking Producción</a></li>                                
+                                <li><a href="/Paginas/PRODUCTO_CatalogoTernium.aspx" style="color: #CC3300;">Actualizar Catálogo Ternium</a></li>
+                                <li><a href="/Paginas/CAL_InformeMuestras.aspx" style="color: #CC3300;">Informe de Muestras</a></li>
+                                <li><a href="/Paginas/CAL_TamboresPintura.aspx" style="color: #CC3300;">Informe Registración Tambores</a></li>
+			                    
+                            </ul>
+			                </li>
+                                                        
+                            <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Reclamos</a>
+                            <ul class="dropdown-menu">			                     
+                                <li><a href="/Paginas/CAL_EstadoReclamos.aspx" style="color: #CC3300;">Estado Reclamos</a></li>
+                                <li><a href="/Paginas/CAL_GestionReclamos.aspx" style="color: #CC3300;">Gestión Reclamos</a></li>
+                            </ul>
+                            </li>
+                              
+                            </ul>
+                                </li>
+
+                        <%--Comercial--%>
+
+                         <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: #FFFFFF"><i class='fas fa-handshake'></i> Comercial
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+
+                            <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Administración de Ventas</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Paginas/ADM_InformeClientes.aspx" style="color: #CC3300;">Clientes</a></li>
+                                <li><a href="/Paginas/VT_EstadoCarteraPedidos.aspx" style="color: #CC3300;">Estado Cartera de Pedidos</a></li>
+                                <li><a href="/Paginas/VT_CuentaCorrienteGlobal.aspx" style="color: #CC3300;">Estado Cuenta Corriente</a></li>
+                                <li><a href="/Paginas/VT_CredyCondPago.aspx" style="color: #CC3300;">Crédito y Condiciones de Pago</a></li>
+                                <li><a href="/Paginas/VT_ConfiguracionListaDePrecios.aspx" style="color: #CC3300;">Configuración Lista General De Precios</a></li>
+                                <li><a href="/Paginas/VT_ConfiguracionLME.aspx" style="color: #CC3300;">Configuración Lista de Precios LME</a></li>
+                                <li><a href="/Paginas/VT_ListaDePreciosXV.aspx" style="color: #CC3300;">Lista General De Precios</a></li>
+                                <li><a href="/Paginas/VT_ListaDePreciosLMEXV.aspx" style="color: #CC3300;">Lista Aluminio LME</a></li>
+                                <li><a href="/Paginas/VT_GestionOportunidades.aspx" style="color: #CC3300;">Gestion Depósito Oportunidades</a></li> 
+                                <li><a href="/Paginas/VT_InventarioOportunidades.aspx" style="color: #CC3300;">Stock Depósito Oportunidades</a></li> 
+                                <li><a href="/Paginas/VT_MateriasPrimasPendientes.aspx" style="color: #CC3300;">Materias Primas Pendientes</a></li>
+                                <li><a href="/Paginas/VT_MaterialaRemitir.aspx" style="color: #CC3300;">Material a Remitir</a></li>
+                                <li><a href="/Paginas/VT_ParteDiario.aspx" style="color: #CC3300;">Parte Diario</a></li>
+                                <li><a href="/Paginas/ADM_Pendientes_Por_Cliente.aspx" style="color: #CC3300;">Pendientes Por Cliente</a></li> 
+                                <li><a href="/Paginas/DIR_RankingClientes.aspx" style="color: #CC3300;">Ranking Clientes</a></li>
+                                <li><a href="/Paginas/INV_InventarioPorDeposito.aspx" style="color: #CC3300;">Inventario Por Depósito</a></li>
+                                <li><a href="/Paginas/VT_StockDisponibleVentas.aspx" style="color: #CC3300;">Stock Promociones</a></li> 
+                                <li><a href="/Paginas/VT_GestionStockDisponibleVentas.aspx" style="color: #CC3300;">Gestion Stock Promociones</a></li> 
+                                <li><a href="/Paginas/PROD_SeguimientoPedidosFabricados.aspx" style="color: #CC3300;">Seguimiento Entrega Pedidos</a></li> 
+                                <li><a href="/Paginas/INV_IngresosPendientesMP.aspx" style="color: #CC3300;">Ingresos Pendientes MP</a></li>
+                                <li><a href="/Paginas/SRP_TrackingCalidad.aspx" style="color: #CC3300;">Tracking Calidad</a></li> 
+                                
+                            </ul>
+                            </li>
+
+                              <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Autorización Comercial</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Paginas/INV_AutorizacionInventario.aspx" style="color: #CC3300;">Autorización de Inventario</a></li>
+                                <li><a href="/Paginas/COM_AutorizacionRequerimientos.aspx?parametro=1" style="color: #CC3300;">Autorización Requerimientos</a></li>                                                           
+                                <li><a href="/Paginas/VT_AutorizacionMatching.aspx" style="color: #CC3300;">Autorización Matching</a></li>
+                                <li><a href="/Paginas/VT_AutorizacionPedidos.aspx" style="color: #CC3300;">Autorización Pedidos</a></li>
+                                <li><a href="/Paginas/DIR_ReclamosPendientes.aspx" style="color: #CC3300;">Autorización Reclamos</a></li>
+                                <li><a href="/Paginas/DIR_ReclamosPendientesNC.aspx" style="color: #CC3300;">Autorización Envío Reclamos</a></li>
+                                <li><a href="/Paginas/VT_DetalleAutorizacionMatching.aspx" style="color: #CC3300;">Informe Autorización Matching</a></li>
+                                <li><a href="/Paginas/CAL_AutorizacionMuestras.aspx?parametro=1" style="color: #CC3300;">Autorización Muestras</a></li>
+                                    
+                            </ul>
+                            </li>
+
+
+                            <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Gestión Pedidos</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Paginas/VT_IngresoPedidos.aspx" style="color: #CC3300;">Ingreso Pedidos</a></li>
+                                <li><a href="/Paginas/VT_ModificacionPedidos.aspx" style="color: #CC3300;">Modificación Pedidos</a></li>                                                           
+                                <li><a href="/Paginas/VT_AutorizacionPedidos.aspx" style="color: #CC3300;">Autorización Pedidos</a></li>
+                                
+                            </ul>
+                            </li>
+                               <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Gestión Muestras</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Paginas/CAL_GestionMuestras.aspx" style="color: #CC3300;">Alta de Muestras</a></li>
+                                <li><a href="/Paginas/CAL_InformeMuestras.aspx" style="color: #CC3300;">Estado de Muestras</a></li>
+
+
+
+                                
+                            </ul>
+                            </li>
+
+                              <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Gestión Reservas MP</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Paginas/VT_ReservasGestion.aspx" style="color: #CC3300;">Gestión Reserva Materias Primas</a></li>
+                                <li><a href="/Paginas/VT_ReservaMP.aspx" style="color: #CC3300;">Reserva Materias Primas</a></li>
+                                
+                            </ul>
+                            </li>
+                               <li class="dropdown-submenu">
+			                    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Productos</a>
+                                     <ul class="dropdown-menu">
+			                            <li><a href="/Paginas/VT_FichasTecnicas.aspx" style="color: #CC3300;">Fichas Técnicas</a></li>
+                                    </ul>
+                                
+			                </li>
+
+
+                              
+                            <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Vendedores</a>
+
+                              
+                            <ul class="dropdown-menu">
+                               
+			                    <li class="dropdown-submenu">
+			                    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Antonio Milone</a>
+			    
+                                 <ul class="dropdown-menu">
+                                
+                                <li class="dropdown-submenu">
+			                        <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Pedidos</a>
+                                     <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+			                                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Facturas Emitidas</a>
+			                                <ul class="dropdown-submenu">
+                                                <li><a href="/Paginas/VT_VentasPorVendedor.aspx?parametro=Milone&usuario=amilone" style="color: #CC3300;">Por Cliente U$S</a></li>
+			                                    <li><a href="/Paginas/VT_VentasPorVendedorDia.aspx?parametro=Milone&usuario=amilone" style="color: #CC3300;">Por Dia U$S</a></li>
+			                                    <li><a href="/Paginas/VT_VentasPorFamilia.aspx?parametro=Milone&usuario=amilone" style="color: #CC3300;">Por Línea de Productos Kgs</a></li>
+
+                                                
+                                            </ul>
+                                             <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Pedidos Ingresados</a>
+			                                <ul class="dropdown-submenu">
+                                              <li><a href="/Paginas/VT_EstadoCarteraPedidosXV.aspx?parametro=Milone&usuario=amilone" style="color: #CC3300;">Estado Cartera de Pedidos</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>                             
+			                    </li>			                
+                                
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Financiera</a>
+                                     <ul class="dropdown-menu">
+                                        
+                                           <li><a href="/Paginas/VT_CuentaCorrientePorVendedor.aspx?parametro=Milone&usuario=amilone" style="color: #CC3300;">Estado Cuenta Corriente</a></li>
+                                           <li><a href="/Paginas/VT_CredyCondPagoPorVendedor.aspx?parametro=Milone&usuario=amilone" style="color: #CC3300;">Crédito y Condiciones de Pago</a></li>
+                               
+                                        
+                                    </ul>                                 
+			                    </li>
+                            <li class="dropdown-submenu">
+			                    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Inventario</a>
+                                    <ul class="dropdown-menu">                                                                              
+                                        <li><a href="/Paginas/VT_StockDisponibleVentas.aspx" style="color: #CC3300;">Stock Promociones</a></li>                                        
+                                        <li><a href="/Paginas/VT_InventarioOportunidades.aspx" style="color: #CC3300;">Stock Depósito Oportunidades</a></li>
+			                            <li><a href="/Paginas/VT_MaterialaRemitirXV.aspx?parametro=Milone&usuario=amilone" style="color: #CC3300;">Material a Remitir</a></li>
+                                        <li class="dropdown-submenu">
+			                                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Muestras Gestión</a>
+			                                <ul class="dropdown-submenu">
+                                                <li><a href="/Paginas/CAL_GestionMuestras.aspx?parametro=Milone&usuario=amilone" style="color: #CC3300;">Alta de Muestras</a></li>
+                                                <li><a href="/Paginas/CAL_InformeMuestras.aspx?parametro=Milone&usuario=amilone" style="color: #CC3300;">Estado de Muestras</a></li>
+                                            </ul>                                            
+                                        </li>                                         
+                                    </ul>                                  
+			                    </li>
+                            <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Precios</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                                <li><a href="/Paginas/VT_ListaDePreciosXV.aspx?parametro=Milone&usuario=amilone" style="color: #CC3300;">Lista General</a></li>
+                                            <li><a href="/Paginas/VT_ListaDePreciosLMEXV.aspx?parametro=Milone&usuario=amilone" style="color: #CC3300;">Lista Aluminio LME</a></li>
+                                    </ul>
+                                
+			                </li>
+
+                            <li class="dropdown-submenu">
+			                    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Productos</a>
+                                     <ul class="dropdown-menu">
+			                            <li><a href="/Paginas/VT_FichasTecnicas.aspx?parametro=Milone&usuario=amilone" style="color: #CC3300;">Fichas Técnicas</a></li>
+                                    </ul>
+                                
+			                </li>
+
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Clientes</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                            <li><a href="/Paginas/VT_ClientesXV.aspx?parametro=Milone Central&usuario=amilone" style="color: #CC3300;">Clientes Por Zona</a></li>
+                                         
+                                        
+                                    </ul>
+			                    </li>
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Compras</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                            <li><a href="/Paginas/COM_MateriasPrimasPendientes.aspx" style="color: #CC3300;">MP Pendientes</a></li>
+                                         
+                                        
+                                    </ul>
+			                    </li>
+                                <li><a href="/Paginas/SRP_TrackingCalidad.aspx" style="background-color: #CC3300; color: #FFFFFF;">Tracking Calidad</a></li> 
+
+                             </ul>	
+
+			            </li>
+                                
+
+                        <li class="dropdown-submenu">
+			            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Casa Central</a>
+			           <ul class="dropdown-menu">
+                                
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Pedidos</a>
+                                     <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+			                                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Facturas Emitidas</a>
+			                                <ul class="dropdown-submenu">                                                
+
+                                                <li><a href="/Paginas/VT_VentasPorVendedor.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Por Cliente U$S</a></li>
+			                                    <li><a href="/Paginas/VT_VentasPorVendedorDia.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Por Dia U$S</a></li>
+			                                    <li><a href="/Paginas/VT_VentasPorFamilia.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Por Línea de Productos Kgs</a></li>
+                            
+                                                
+                                            </ul>
+                                             <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Pedidos Ingresados</a>
+			                                <ul class="dropdown-submenu">
+                                                <li><a href="/Paginas/VT_EstadoCarteraPedidosXV.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Estado Cartera de Pedidos</a></li>
+                                                
+                                            </ul>
+                                        </li>
+                                    </ul>                             
+			                    </li>			                
+                                
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Financiera</a>
+                                     <ul class="dropdown-menu">
+                                        
+                                           <li><a href="/Paginas/VT_CuentaCorrientePorVendedor.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Estado Cuenta Corriente</a></li>
+                                            <li><a href="/Paginas/VT_CredyCondPagoPorVendedor.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Crédito y Condiciones de Pago</a></li>
+                               
+                                        
+                                    </ul>                                 
+			                    </li>
+                            <li class="dropdown-submenu">
+			                    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Inventario</a>
+                                    <ul class="dropdown-menu">                                        
+                                        <li><a href="/Paginas/VT_StockDisponibleVentas.aspx" style="color: #CC3300;">Stock Promociones</a></li>                                        
+                                        <li><a href="/Paginas/VT_InventarioOportunidades.aspx" style="color: #CC3300;">Stock Depósito Oportunidades</a></li>
+			                            <li><a href="/Paginas/VT_MaterialaRemitirXV.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Material a Remitir</a></li>                                        
+                                        <li class="dropdown-submenu">
+			                                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Muestras Gestión</a>
+			                                <ul class="dropdown-submenu">
+                                                <li><a href="/Paginas/CAL_GestionMuestras.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Alta de Muestras</a></li>
+                                                <li><a href="/Paginas/CAL_InformeMuestras.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Estado de Muestras</a></li>
+                                            </ul>                                            
+                                        </li>
+                                    </ul>                                  
+			                    </li>
+                            <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Precios</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                            <li><a href="/Paginas/VT_ListaDePreciosXV.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Lista General</a></li>
+                                        <li><a href="/Paginas/VT_ListaDePreciosLMEXV.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Lista Aluminio LME</a></li>
+                                        
+                                    </ul>
+                                
+			                    </li>
+                           <li class="dropdown-submenu">
+			                    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Productos</a>
+                                     <ul class="dropdown-menu">
+			                            <li><a href="/Paginas/VT_FichasTecnicas.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Fichas Técnicas</a></li>
+                                    </ul>
+                                
+			                </li>
+
+
+                            <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Clientes</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                            <li><a href="/Paginas/VT_ClientesXV.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Clientes Por Zona</a></li>
+                                         
+                                        
+                                    </ul>
+                                 
+			                    </li>
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Compras</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                            <li><a href="/Paginas/COM_MateriasPrimasPendientes.aspx" style="color: #CC3300;">MP Pendientes</a></li>
+                                         
+                                        
+                                    </ul>
+			                    </li>
+                                <li><a href="/Paginas/SRP_TrackingCalidad.aspx" style="background-color: #CC3300; color: #FFFFFF;">Tracking Calidad</a></li> 
+                                
+                             </ul>	
+			            </li>
+
+                        <li class="dropdown-submenu">
+			            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Fernando Facheli</a>
+			           <ul class="dropdown-menu">
+                                
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Pedidos</a>
+                                     <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+			                                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Facturas Emitidas</a>
+			                                <ul class="dropdown-submenu">                                                
+
+                                                <li><a href="/Paginas/VT_VentasPorVendedor.aspx?parametro=Facheli&usuario=ffacheli" style="color: #CC3300;">Por Cliente U$S</a></li>
+			                                    <li><a href="/Paginas/VT_VentasPorVendedorDia.aspx?parametro=Facheli&usuario=ffacheli" style="color: #CC3300;">Por Dia U$S</a></li>
+			                                    <li><a href="/Paginas/VT_VentasPorFamilia.aspx?parametro=Facheli&usuario=ffacheli" style="color: #CC3300;">Por Línea de Productos Kgs</a></li>
+                            
+                                                
+                                            </ul>
+                                             <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Pedidos Ingresados</a>
+			                                <ul class="dropdown-submenu">
+                                              <li><a href="/Paginas/VT_EstadoCarteraPedidosXV.aspx?parametro=Facheli&usuario=ffacheli" style="color: #CC3300;">Estado Cartera de Pedidos</a></li>
+                                            
+                                            </ul>
+                                        </li>
+                                    </ul>                             
+			                    </li>			                
+                                
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Financiera</a>
+                                     <ul class="dropdown-menu">
+                                        
+                                            <li><a href="/Paginas/VT_CuentaCorrientePorVendedor.aspx?parametro=Facheli&usuario=ffacheli" style="color: #CC3300;">Estado Cuenta Corriente</a></li>
+                                            <li><a href="/Paginas/VT_CredyCondPagoPorVendedor.aspx?parametro=Facheli&usuario=ffacheli" style="color: #CC3300;">Crédito y Condiciones de Pago</a></li>
+                                            
+                                        
+                                    </ul>                                 
+			                    </li>
+                            <li class="dropdown-submenu">
+			                    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Inventario</a>
+                                    <ul class="dropdown-menu">                                        
+                                        <li><a href="/Paginas/VT_StockDisponibleVentas.aspx" style="color: #CC3300;">Stock Promociones</a></li> 
+                                        <li><a href="/Paginas/VT_InventarioOportunidades.aspx" style="color: #CC3300;">Stock Depósito Oportunidades</a></li>
+			                            <li><a href="/Paginas/VT_MaterialaRemitirXV.aspx?parametro=Facheli&usuario=ffacheli" style="color: #CC3300;">Material a Remitir</a></li>
+                                         <li class="dropdown-submenu">
+			                                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Muestras Gestión</a>
+			                                <ul class="dropdown-submenu">
+                                                <li><a href="/Paginas/CAL_GestionMuestras.aspx?parametro=Facheli&usuario=ffacheli" style="color: #CC3300;">Alta de Muestras</a></li>
+                                                <li><a href="/Paginas/CAL_InformeMuestras.aspx?parametro=Facheli&usuario=ffacheli" style="color: #CC3300;">Estado de Muestras</a></li>
+                                            </ul>                                            
+                                        </li>   
+
+                                        
+                                    </ul>                                  
+			                    </li>
+                            <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Precios</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                            <%--<li><a href="/Paginas/VT_CuentaCorrientePorVendedor.aspx?parametro=Casa Central&usuario=megonzalez" style="color: #CC3300;">Estado Cuenta Corriente</a></li>--%>
+                                      <li><a href="/Paginas/VT_ListaDePreciosXV.aspx?parametro=Facheli&usuario=ffacheli" style="color: #CC3300;">Lista General</a></li>
+                                        <li><a href="/Paginas/VT_ListaDePreciosLMEXV.aspx?parametro=Facheli&usuario=ffacheli" style="color: #CC3300;">Lista Aluminio LME</a></li>
+                                        
+                                    </ul>
+                                
+			                    </li>
+
+                           <li class="dropdown-submenu">
+			                    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Productos</a>
+                                     <ul class="dropdown-menu">
+			                            <li><a href="/Paginas/VT_FichasTecnicas.aspx?parametro=Facheli&usuario=ffacheli" style="color: #CC3300;">Fichas Técnicas</a></li>
+                                    </ul>
+                                
+			                </li>
+
+                            <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Clientes</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                            <li><a href="/Paginas/VT_ClientesXV.aspx?parametro=Facheli&usuario=ffacheli" style="color: #CC3300;">Clientes Por Zona</a></li>
+                                         
+                                        
+                                    </ul>
+                                 
+			                    </li>
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Compras</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                            <li><a href="/Paginas/COM_MateriasPrimasPendientes.aspx" style="color: #CC3300;">MP Pendientes</a></li>
+                                         
+                                        
+                                    </ul>
+			                    </li>
+                                <li><a href="/Paginas/SRP_TrackingCalidad.aspx" style="background-color: #CC3300; color: #FFFFFF;">Tracking Calidad</a></li> 
+                                
+                             </ul>		
+			        </li>
+
+                    <li class="dropdown-submenu">
+			        <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Javier Estefania</a>
+			        <ul class="dropdown-menu">
+                                
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Pedidos</a>
+                                     <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+			                                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Facturas Emitidas</a>
+			                                <ul class="dropdown-submenu">                                                
+
+                                                <li><a href="/Paginas/VT_VentasPorVendedor.aspx?parametro=Estefania&usuario=jestefania" style="color: #CC3300;">Por Cliente U$S</a></li>
+			                                    <li><a href="/Paginas/VT_VentasPorVendedorDia.aspx?parametro=Estefania&usuario=jestefania" style="color: #CC3300;">Por Dia U$S</a></li>
+			                                    <li><a href="/Paginas/VT_VentasPorFamilia.aspx?parametro=Estefania&usuario=jestefania" style="color: #CC3300;">Por Línea de Productos Kgs</a></li>
+                            
+                                                
+                                            </ul>
+                                             <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Pedidos Ingresados</a>
+			                                <ul class="dropdown-submenu">
+                                              <li><a href="/Paginas/VT_EstadoCarteraPedidosXV.aspx?parametro=Estefania&usuario=jestefania" style="color: #CC3300;">Estado Cartera de Pedidos</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>                             
+			                    </li>			                
+                                
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Financiera</a>
+                                     <ul class="dropdown-menu">
+                                        
+                                            <li><a href="/Paginas/VT_CuentaCorrientePorVendedor.aspx?parametro=Estefania&usuario=jestefania" style="color: #CC3300;">Estado Cuenta Corriente</a></li>
+                                            <li><a href="/Paginas/VT_CredyCondPagoPorVendedor.aspx?parametro=Estefania&usuario=jestefania" style="color: #CC3300;">Crédito y Condiciones de Pago</a></li>
+                                    
+                                        
+                                    </ul>                                 
+			                    </li>
+                            <li class="dropdown-submenu">
+			                    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Inventario</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/Paginas/VT_StockDisponibleVentas.aspx" style="color: #CC3300;">Stock Promociones</a></li>                                        
+                                        <li><a href="/Paginas/VT_InventarioOportunidades.aspx" style="color: #CC3300;">Stock Depósito Oportunidades</a></li>
+			                            <li><a href="/Paginas/VT_MaterialaRemitirXV.aspx?parametro=Estefania&usuario=jestefania" style="color: #CC3300;">Material a Remitir</a></li>
+                                        <li class="dropdown-submenu">
+			                                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Muestras Gestión</a>
+			                                <ul class="dropdown-submenu">
+                                                <li><a href="/Paginas/CAL_GestionMuestras.aspx?parametro=Estefania&usuario=jestefania" style="color: #CC3300;">Alta de Muestras</a></li>
+                                                <li><a href="/Paginas/CAL_InformeMuestras.aspx?parametro=Estefania&usuario=jestefania" style="color: #CC3300;">Estado de Muestras</a></li>
+                                            </ul>                                            
+                                        </li>
+                                        
+                                    </ul>                                  
+			                    </li>
+                            <li class="dropdown-submenu">
+			                    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Precios</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                         <li><a href="/Paginas/VT_ListaDePreciosXV.aspx?parametro=Estefania&usuario=jestefania" style="color: #CC3300;">Lista General</a></li>
+                                    <li><a href="/Paginas/VT_ListaDePreciosLMEXV.aspx?parametro=Estefania&usuario=jestefania" style="color: #CC3300;">Lista Aluminio LME</a></li>
+                                         
+                                        
+                                    </ul>
+                                
+			                    </li>
+                            <li class="dropdown-submenu">
+			                    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Productos</a>
+                                     <ul class="dropdown-menu">
+			                            <li><a href="/Paginas/VT_FichasTecnicas.aspx?parametro=Estefania&usuario=jestefania" style="color: #CC3300;">Fichas Técnicas</a></li>
+                                    </ul>
+                                
+			                </li>
+
+                            <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Clientes</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                            <li><a href="/Paginas/VT_ClientesXV.aspx?parametro=Estefania&usuario=jestefania" style="color: #CC3300;">Clientes Por Zona</a></li>
+                                         
+                                        
+                                    </ul>
+                                 
+			                    </li>
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Compras</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                            <li><a href="/Paginas/COM_MateriasPrimasPendientes.aspx" style="color: #CC3300;">MP Pendientes</a></li>
+                                         
+                                        
+                                    </ul>
+			                    </li>
+                                <li><a href="/Paginas/SRP_TrackingCalidad.aspx" style="background-color: #CC3300; color: #FFFFFF;">Tracking Calidad</a></li> 
+                                
+                             </ul>	
+			    </li>
+
+                <li class="dropdown-submenu">
+			    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Jordan Muschitiello</a>
+			   <ul class="dropdown-menu">
+                                
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Pedidos</a>
+                                     <ul class="dropdown-menu">
+                                        <li class="dropdown-submenu">
+			                                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Facturas Emitidas</a>
+			                                <ul class="dropdown-submenu">                                                
+
+                                                <li><a href="/Paginas/VT_VentasPorVendedor.aspx?parametro=Muschitiello&usuario=jmuschitiello" style="color: #CC3300;">Por Cliente U$S</a></li>
+			                                    <li><a href="/Paginas/VT_VentasPorVendedorDia.aspx?parametro=Muschitiello&usuario=jmuschitiello" style="color: #CC3300;">Por Dia U$S</a></li>
+			                                    <li><a href="/Paginas/VT_VentasPorFamilia.aspx?parametro=Muschitiello&usuario=jmuschitiello" style="color: #CC3300;">Por Línea de Productos Kgs</a></li>
+                            
+                                                
+                                            </ul>
+                                             <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Pedidos Ingresados</a>
+			                                <ul class="dropdown-submenu">
+                                              <li><a href="/Paginas/VT_EstadoCarteraPedidosXV.aspx?parametro=Muschitiello&usuario=jmuschitiello" style="color: #CC3300;">Estado Cartera de Pedidos</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>                             
+			                    </li>			                
+                                
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Financiera</a>
+                                     <ul class="dropdown-menu">
+                                        
+                                            <li><a href="/Paginas/VT_CuentaCorrientePorVendedor.aspx?parametro=Muschitiello&usuario=jmuschitiello" style="color: #CC3300;">Estado Cuenta Corriente</a></li>
+                                            <li><a href="/Paginas/VT_CredyCondPagoPorVendedor.aspx?parametro=Muschitiello&usuario=jmuschitiello" style="color: #CC3300;">Crédito y Condiciones de Pago</a></li>
+                               
+                                        
+                                    </ul>                                 
+			                    </li>
+                            <li class="dropdown-submenu">
+			                    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Inventario</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/Paginas/VT_StockDisponibleVentas.aspx" style="color: #CC3300;">Stock Promociones</a></li> 
+                                        <li><a href="/Paginas/VT_InventarioOportunidades.aspx" style="color: #CC3300;">Stock Depósito Oportunidades</a></li>
+			                            <li><a href="/Paginas/VT_MaterialaRemitirXV.aspx?parametro=Muschitiello&usuario=jmuschitiello" style="color: #CC3300;">Material a Remitir</a></li>
+                                         <li class="dropdown-submenu">
+			                                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Muestras Gestión</a>
+			                                <ul class="dropdown-submenu">
+                                                <li><a href="/Paginas/CAL_GestionMuestras.aspx?parametro=Muschitiello&usuario=jmuschitiello" style="color: #CC3300;">Alta de Muestras</a></li>
+                                                <li><a href="/Paginas/CAL_InformeMuestras.aspx?parametro=Muschitiello&usuario=jmuschitiello" style="color: #CC3300;">Estado de Muestras</a></li>
+                                            </ul>                                            
+                                        </li>  
+
+                                        
+                                    </ul>                                  
+			                    </li>
+                            <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Precios</a>
+                                     <ul class="dropdown-menu">
+                                            <li><a href="/Paginas/VT_ListaDePreciosXV.aspx?parametro=Muschitiello&usuario=jmuschitiello" style="color: #CC3300;">Lista General</a></li>
+                                            <li><a href="/Paginas/VT_ListaDePreciosLMEXV.aspx?parametro=Muschitiello&usuario=jmuschitiello" style="color: #CC3300;">Lista Aluminio LME</a></li>
+                                        
+                                    </ul>
+                                
+			                    </li>
+                            
+                                <li class="dropdown-submenu">
+			                    <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Productos</a>
+                                     <ul class="dropdown-menu">
+			                            <li><a href="/Paginas/VT_FichasTecnicas.aspx?parametro=Muschitiello&usuario=jmuschitiello" style="color: #CC3300;">Fichas Técnicas</a></li>
+                                    </ul>
+                                
+			                </li>
+
+                            <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Clientes</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                            <li><a href="/Paginas/VT_ClientesXV.aspx?parametro=Muschitiello&usuario=jmuschitiello" style="color: #CC3300;">Clientes Por Zona</a></li>
+                                         
+                                        
+                                    </ul>
+                                 
+			                    </li>
+                                <li class="dropdown-submenu">
+			                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">INFO Compras</a>
+                                     <ul class="dropdown-menu">
+                                        
+			                            <li><a href="/Paginas/COM_MateriasPrimasPendientes.aspx" style="color: #CC3300;">MP Pendientes</a></li>
+                                         
+                                        
+                                    </ul>
+			                    </li>
+                                <li><a href="/Paginas/SRP_TrackingCalidad.aspx" style="background-color: #CC3300; color: #FFFFFF;">Tracking Calidad</a></li> 
+                                
+                             </ul>	
+			    </li>
+                   
+			  
+                </ul>
+
+                </li> 
+                
+                <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Mail Masivos</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Paginas/MAIL_GeneracionMailMasivo.aspx?parametro=Comercial" style="color: #CC3300;">Generación Mail Masivos</a></li>                                
+                                <li><a href="/Paginas/MAIL_InformeMailMasivo.aspx" style="color: #CC3300;">Informe Mail Masivos</a></li>                                
+                                
+                            </ul>
+                </li>      
+                 
+                                                                                  
+                <li class="dropdown-submenu">
+                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Reclamos</a>
+                <ul class="dropdown-menu">
+			        <li><a href="/Paginas/VT_GestionReclamos.aspx" style="color: #CC3300;">Gestión Reclamos</a></li>
+                    <li><a href="/Paginas/VT_IngresoReclamos.aspx" style="color: #CC3300;">Ingreso Reclamos Clientes</a></li>
+                </ul>
+                </li>
+               
+                </ul>
+                </li>
+
+                <%--Compras--%>
+
+                <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: #FFFFFF"> <i class='fas fa-ship'></i> Compras
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">                       
+                    <li class="dropdown-submenu">
+			            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Indicadores de Gestión</a>
+			            <ul class="dropdown-menu">
+			                <li><a href="/Paginas/COM_CompraInsumosAnual.aspx" style="color: #CC3300;">Compras Insumos Anual</a></li>
+			                <li><a href="/Paginas/COM_CompraServiciosAnual.aspx" style="color: #CC3300;">Compras Servicios Anual</a></li>
+			                <li><a href="/Paginas/COM_InsumosPendientes.aspx" style="color: #CC3300;">Insumos Pendientes</a></li>
+                            <li><a href="/Paginas/COM_MateriasPrimasPendientes.aspx" style="color: #CC3300;">Materias Primas Pendientes</a></li>                                
+                            <li><a href="/Paginas/COM_PerformanceProveedores.aspx" style="color: #CC3300;">Performance Proveedores</a></li>                                
+                            <li><a href="/Paginas/COM_IndicadoresDeGestion.aspx" style="color: #CC3300;">Requerimientos</a></li>                               
+                        </ul>
+			        </li>
+
+                        <li class="dropdown-submenu">
+			            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Administración de Compras</a>
+			            <ul class="dropdown-menu">
+			                <li><a href="/Paginas/COM_ParametrosProveedores.aspx" style="color: #CC3300;">Parametros Proveedores</a></li>
+			                <li><a href="/Paginas/COM_ItemsPendientesImportacion.aspx" style="color: #CC3300;">Items Pendientes Embarque</a></li>
+			                <li><a href="/Paginas/COM_GestionMateriasPrimasPendientes.aspx" style="color: #CC3300;">Gestión Materias Primas Pendientes</a></li>
+			                <li><a href="/Paginas/COM_OC_Servicios.aspx" style="color: #CC3300;">Ordenes de Compras de Servicios</a></li>
+                            <li><a href="/Paginas/PRODUCTO_CatalogoTernium.aspx" style="color: #CC3300;">Actualizar Catálogo Ternium</a></li>
+
+                        </ul>
+			        </li>
+                    <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Gestión Pañol</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/PROD_GestionPañol.aspx" style="color: #CC3300;">Gestión Productos Pañol</a></li>                                                           
+                                <li><a href="/Paginas/COM_ProductosPañol.aspx" style="color: #CC3300;">Productos Pañol</a></li>                                                           
+                                <li><a href="/Paginas/PROD_NovedadesPañol.aspx" style="color: #CC3300;">Pendientes Ingreso Pañol</a></li>                                                           
+                                <li><a href="/Paginas/PROD_NovedadesManualesPañol.aspx" style="color: #CC3300;">Transacciones Manuales Pañol</a></li>                                                           
+                                <li><a href="/Paginas/PROD_EgresosPañol.aspx" style="color: #CC3300;">Egresos Pañol</a></li>    
+                                <li><a href="/Paginas/PROD_SeguimientoPañol.aspx" style="color: #CC3300;">Seguimiento Pañol</a></li>    
+                                <li><a href="/Paginas/COM_GestionIPC.aspx" style="color: #CC3300;">Gestión IPC</a></li>    
+                                                                                      
+                            </ul>
+                            </li> 
+                        </ul>
+                    </li>
+
+                        <%--Direccion--%>
+
+                         <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: #FFFFFF"><i class="fas fa-user-tie"></i> Dirección
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+
+                        <li class="dropdown-submenu">
+			            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Indicadores</a>
+			            <ul class="dropdown-menu">
+			                <li><a href="/Paginas/DIR_TableroDireccion.aspx" style="color: #CC3300;">Tablero Gerencia</a></li>
+                            <li><a href="/Paginas/DIR_Cobranzas.aspx" style="color: #CC3300;">Detalle Cobranzas</a></li>
+                            <li><a href="/Paginas/DIR_RankingClientes.aspx" style="color: #CC3300;">Ranking Clientes</a></li>                               
+                        </ul>
+			            </li>
+                        <li class="dropdown-submenu">
+			            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Auditoría</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/DIR_ControlSaldosProveedores.aspx" style="color: #CC3300;">Auditoría Saldo Proveedores</a></li>
+                                <li><a href="/Paginas/DIR_ProductosDefectuosos.aspx" style="color: #CC3300;">Productos Defectuosos</a></li>
+                                <li><a href="/Paginas/SIS_Trafico_Intranet.aspx" style="color: #CC3300;">Trafico Intranet</a></li> 
+                                <li><a href="/Paginas/INV_EditarInventarioAnual.aspx" style="color: #CC3300;">Editar Etiquetas</a></li> 
+                                <li><a href="/Paginas/INV_ConfiguracionInicial.aspx" style="color: #CC3300;">Procesos Inventario Anual</a></li> 
+                                
+                            </ul>
+                        </li>
+
+                              <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Autorizaciones</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/COM_AutorizacionRequerimientos.aspx?parametro=10" style="color: #CC3300;">Autorización Requerimientos</a></li>
+                                
+                                
+                            </ul>
+                            </li>  
+
+                         <li class="dropdown-submenu">
+			            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Ingeniería Industrial</a>
+			                <ul class="dropdown-menu">
+                                
+                            <li><a href="/Paginas/ING_PedidosPendientesProgramar.aspx" style="color: #CC3300;">Pedidos Pendientes para Programar</a></li>
+                            <li><a href="/Paginas/ING_Stock.aspx" style="color: #CC3300;">Stock</a></li>
+                            <li><a href="/Paginas/VT_ParteDiario.aspx" style="color: #CC3300;">Parte Diario</a></li>
+                            <li><a href="/Paginas/ING_ProducidoPorFecha.aspx" style="color: #CC3300;">Producido Por Fecha</a></li>
+                            <li><a href="/Paginas/ING_GeneracionArchivos.aspx" style="color: #CC3300;">Generación Archivos</a></li>
+                            <li><a href="/Paginas/ING_OCPendientesValorizadas.aspx" style="color: #CC3300;">OC Pendientes Valorizadas</a></li>
+
+
+
+                            </ul>
+                        </li>
+                                  <li class="dropdown-submenu">
+			            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Sistemas</a>
+			                <ul class="dropdown-menu">
+                                
+                            <li><a href="/Paginas/DIR_Equipamiento.aspx" style="color: #CC3300;">Equipamiento Sistemas</a></li>
+                            <li><a href="/Paginas/SIS_SeguimientoProyectos.aspx" style="color: #CC3300;">Seguimiento Proyectos de Sistemas</a></li>
+                            <li><a href="/Paginas/SIS_Consultores.aspx" style="color: #CC3300;">Información Consultores de Sistemas</a></li>
+                            <%--<li><a href="http://192.168.11.98/consultors" style="color: #CC3300;">Gestion Consultores</a></li>--%>
+                                
+
+
+
+                            </ul>
+                        </li>
+                             
+                          
+                              </ul>
+                        </li>
+
+                       
+
+
+                        <%--Inventario--%>
+
+                        <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: #FFFFFF"><i class="fa fa-truck"></i> Inventario
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+
+                        <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Administración Inventario</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/INV_IngresoInventario.aspx" style="color: #CC3300;">Ingresos de Inventario</a></li>
+                                <li><a href="/Paginas/INV_EgresoInventario.aspx" style="color: #CC3300;">Egresos de Inventario</a></li>
+                                <li><a href="/Paginas/INV_Reclasificaciones.aspx" style="color: #CC3300;">Reclasificaciones</a></li>
+                                <li><a href="/Paginas/INV_ReclasificacionScrap.aspx" style="color: #CC3300;">Reclasificaciones a Scrap</a></li>
+                                <li><a href="/Paginas/INV_TransferenciaInventario.aspx" style="color: #CC3300;">Transferencias de Inventario</a></li>
+                                
+                            </ul>
+                        </li>
+                              <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Autorización Inventario</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/INV_AutorizacionInventario.aspx" style="color: #CC3300;">Autorización de Inventario</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Informes Inventario</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/INV_InventarioPorDeposito.aspx" style="color: #CC3300;">Inventario Por Depósito</a></li>
+                                <li><a href="/Paginas/INV_TransaccionesInventario.aspx" style="color: #CC3300;">Inventario Detalle Transacciones</a></li>
+                                <li><a href="/Paginas/INV_InventarioTambores.aspx" style="color: #CC3300;">Inventario Tambores de Pintura</a></li>
+                                <li><a href="/Paginas/INV_TrackingSerieLote.aspx" style="color: #CC3300;">Tracking Serie Lote</a></li>
+                                
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Inventario Anual</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/INV_InventarioAnual.aspx" style="color: #CC3300;">Estado Inicial Inventario</a></li>                          
+                                <li><a href="/Paginas/INV_RelevamientoInventarioAnual.aspx" style="color: #CC3300;">Relevamiento Inventario(Etiquetas)</a></li>                          
+                                <li><a href="/Paginas/INV_ProgresoInventario.aspx" style="color: #CC3300;">Progreso Inventario</a></li>                          
+                                <li><a href="/Paginas/INV_ResultadoInventarioAnual.aspx" style="color: #CC3300;">Resultado Inventario</a></li>
+                            </ul>
+                        </li>
+                          
+                              </ul>
+                        </li>
+
+                        <%--Produccion--%>
+
+                         <li class="dropdown">
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: #FFFFFF"> <i class="fas fa-industry"></i> Producción
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Expedición</a>
+			                    <ul class="dropdown-menu">
+                                    <li><a href="/Paginas/SC_ParteDiario.aspx" style="color: #CC3300;">Parte Diario</a></li>
+                                    <li><a href="/Paginas/PROD_SeguimientoViajes.aspx" style="color: #CC3300;">Seguimiento Viajes</a></li>
+                                </ul>
+                            </li>
+                                <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Gerencial</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/COM_AutorizacionRequerimientos.aspx?parametro=5" style="color: #CC3300;">Autorización Requerimientos</a></li>                                                           
+                                <li><a href="/Paginas/PROD_RequerimientosProduccion.aspx" style="color: #CC3300;">Informe Requerimientos Producción</a></li>                                                           
+                            </ul>
+                            </li>  
+
+                                 <li class="dropdown-submenu">
+                            <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Muestras</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/Paginas/CAL_AutorizacionMuestras.aspx?parametro=2" style="color: #CC3300;">Autorización Muestras Programación</a></li>
+                                <li><a href="/Paginas/CAL_AutorizacionMuestras.aspx?parametro=3" style="color: #CC3300;">Proceso Muestras Producción</a></li>
+                                <li><a href="/Paginas/CAL_AutorizacionMuestras.aspx?parametro=5" style="color: #CC3300;">Despacho Muestras Expedición</a></li>
+                                    <li><a href="/Paginas/CAL_InformeMuestras.aspx" style="color: #CC3300;">Informe de Muestras</a></li>
+
+
+                                
+                            </ul>
+                            </li>
+
+                            <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Gestión</a>
+			                    <ul class="dropdown-menu">
+                                    <li><a href="/Paginas/CAL_FichasTecnicas.aspx" style="color: #CC3300;">Fichas Tecnicas</a></li>
+                                    <li><a href="/Paginas/PROD_ProducidoPorFamilia.aspx" style="color: #CC3300;">Producido Por Familia</a></li>
+                                    <li><a href="/Paginas/PROD_ProducidoSlitterEmbalaje.aspx" style="color: #CC3300;">Producido Slitter Embalaje</a></li>
+                                    <li><a href="/Paginas/PROD_RegistroInspeccion.aspx" style="color: #CC3300;">Registro de Inspección</a></li> 
+                                    <li><a href="/Paginas/PROD_SeguimientoPedidosFabricados.aspx" style="color: #CC3300;">Seguimiento Entrega Pedidos</a></li> 
+                                    <%--<li><a href="/Paginas/SC_TrackingPedido.aspx" style="color: #CC3300;">Tracking de Pedido</a></li>--%>
+                                    <li><a href="/Paginas/VT_EstadoCarteraPedidos.aspx" style="color: #CC3300;">Tracking de Pedido</a></li>
+                                    
+                                </ul>
+                            </li>
+                            
+                            <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Mantenimiento</a>
+			                    <ul class="dropdown-menu">
+                                    <li><a href="/Paginas/MAN_Administracion_Incidentes.aspx" style="color: #CC3300;">Administración Incidentes Mantenimiento</a></li>
+                                    <li><a href="/Paginas/MAN_Informes_Incidentes.aspx" style="color: #CC3300;">Informes Incidentes</a></li>
+                                    <li><a href="/Paginas/MAN_Monitor_Incidentes.aspx" style="color: #CC3300;">Monitor Incidentes</a></li>
+                                </ul>
+                            </li>
+                               <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Gestión Pañol</a>
+			                <ul class="dropdown-menu">
+                                <li><a href="/Paginas/PROD_GestionPañol.aspx" style="color: #CC3300;">Productos Pañol</a></li> 
+                                <li><a href="/Paginas/PROD_ProductosPañol.aspx" style="color: #CC3300;">Productos Pañol Con Filtros</a></li>                                                           
+                                <li><a href="/Paginas/PROD_NovedadesPañol.aspx" style="color: #CC3300;">Pendientes Ingreso Pañol</a></li>                                                           
+                                <li><a href="/Paginas/PROD_NovedadesManualesPañol.aspx" style="color: #CC3300;">Transacciones Manuales Pañol</a></li>                                                           
+                                <li><a href="/Paginas/PROD_EgresosPañol.aspx" style="color: #CC3300;">Egresos Pañol</a></li>    
+                                <li><a href="/Paginas/PROD_SeguimientoPañol.aspx" style="color: #CC3300;">Seguimiento Pañol</a></li>    
+                                                                                      
+                            </ul>
+                            </li> 
+                               <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Programación</a>
+			                    <ul class="dropdown-menu">
+                                    <li><a href="/Paginas/SC_ConsultaMatching.aspx" style="color: #CC3300;">Consulta de Matching</a></li>
+                                    <li><a href="/Paginas/SC_EstadoMatching.aspx" style="color: #CC3300;">Estado Matching</a></li>
+                                    <li><a href="/Paginas/VT_MateriasPrimasPendientes.aspx" style="color: #CC3300;">Materias Primas Pendientes</a></li>
+                                    <li><a href="/Paginas/INV_InventarioPorDeposito.aspx" style="color: #CC3300;">Inventario Por Depósito</a></li>
+                                    <li><a href="/Paginas/PROG_ReservaMP.aspx" style="color: #CC3300;">Reservas MP</a></li>
+                                    <li><a href="/Paginas/INV_IngresosPendientesMP.aspx" style="color: #CC3300;">Ingresos Pendientes MP</a></li>
+                                    
+
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">SRP</a>
+			                    <ul class="dropdown-menu">
+                                    <li><a href="/Paginas/SC_OperacionesHuerfanas.aspx" style="color: #CC3300;">Operaciones Huerfanas</a></li>
+                                    <li><a href="/Paginas/SC_ParcialesHornoSRP.aspx" style="color: #CC3300;">Operaciones Parciales Horno</a></li>
+                                    <li><a href="/Paginas/SC_PendientesDePesada.aspx" style="color: #CC3300;">Pendientes de Ingreso a ALTE</a></li>
+                                    <li><a href="/Paginas/SRP_SeguimientoScrap.aspx" style="color: #CC3300;">Seguimiento Scrap</a></li>
+                                    <li><a href="/Paginas/SRP_TrackingCalidad.aspx" style="color: #CC3300;">Tracking Calidad</a></li>
+                                    <li><a href="/Paginas/SRP_TrackingProduccion.aspx" style="color: #CC3300;">Tracking Producción</a></li>
+                                    <li><a href="/Paginas/SRP_AnulacionOperaciones.aspx" style="color: #CC3300;">Anulación Operaciones</a></li>
+                                    
+                                     </ul>
+                            </li>
+                          </ul> 
+                        </li>
+
+                        <%--Recursos Humanos--%>
+                         <li class="dropdown" >
+                          <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: #FFFFFF"><i class="fas fa-users"></i> RRHH
+                          <span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+
+                            <li class="dropdown-submenu" >
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Administración RRHH</a>
+			                    <%--<ul class="dropdown-menu" >--%>
+			                    <ul class="dropdown-menu-left" >
+                                    <li><a href="/Paginas/RRHH_Empleados.aspx" style="color: #CC3300;">Empleados</a></li>
+                                    <li><a href="/Paginas/RRHH_Legajos.aspx" style="color: #CC3300;">Legajos</a></li>
+                                    <li><a href="/Paginas/RRHH_NovedadesLiquidacion.aspx" style="color: #CC3300;">Novedades Liquidación</a></li>
+                                </ul>
+                           </li>
+                                <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Gerencial</a>
+			                <ul class="dropdown-menu-left">
+                                <li><a href="/Paginas/COM_AutorizacionRequerimientos.aspx?parametro=4" style="color: #CC3300;">Autorización Requerimientos</a></li>                                                           
+                            </ul>
+                            </li>  
+                            <li class="dropdown-submenu">
+			                <a class="test" tabindex="-1" href="#" style="background-color: #CC3300; color: #FFFFFF;">Gestión de Noticias</a>
+			                    <ul class="dropdown-menu-left">
+                                    <li><a href="/Paginas/RRHH_GestionNoticias.aspx" style="color: #CC3300;">Gestión de Noticias</a></li>
+                                    <li><a href="/Paginas/RRHH_Noticias.aspx" style="color: #CC3300;">Noticias</a></li>
+                                </ul>
+                            </li>
+                           </ul>                          
+                      </li>
+
+                       
+                        <%--final--%> 
+                                                                     
+                    </ul>     
+                        <%--<asp:LinkButton ID="LinkButton1" runat="server" CssClass="btn btn-info" Text="Buscar"><span class="glyphicon glyphicon-phone-alt"></span></asp:LinkButton>--%>
+                                  
+                </div>                
+                <!--/.nav-collapse -->
+
+            </div>
+            <!--/.container-fluid -->
+        </div>
+        <!-- Content Page Section -->        
+
+     
+        <div class="container"  >
+            <asp:ContentPlaceHolder ID="ContentSection" runat="server">
+                 
+            </asp:ContentPlaceHolder>
+            <footer style="background-color:darkred; border-radius:2px; color:white; text-align:center;">
+                By DESARROLLO Sintecrom | 2024 Versión:
+                 <asp:Label ID="Label3" runat="server" forecolor="White" Text=""></asp:Label>
+            </footer>
+            
+        </div>
+
+    </div>   
+    <!-- /container -->
+
+    <%-- Script Section --%>
+    <%--<%: Scripts.Render("~/bundles/jQuery")  %>--%>
+    <asp:ContentPlaceHolder ID="ScriptSection" runat="server" />
+    <%--</form>--%>
+   <%-- <p>
+        &nbsp;</p>--%>
+</body>
+</html>
